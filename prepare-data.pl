@@ -44,7 +44,7 @@ sub prepare_data() {
 		$timestamp = $tmp2;
 		resetTempVariables(2);
 		($tmp1,$tmp2,$tmp3,$tmp4) = split(/\:/,$oid_result);
-		$oid_result = $tmp4;
+		$oid_result = int($tmp2);
 		
 		($oid_number_read,$tmp2) = split(/\=/,$tmp3);
 
